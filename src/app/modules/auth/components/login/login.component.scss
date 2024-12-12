@@ -1,0 +1,242 @@
+@import "../../../../../assets/scss/colors.scss";
+
+.login {
+    background-color:$city-primary-bg-color;
+    height: 100vh;
+    direction: rtl;
+    background-image:url(../../../../../assets/images/auth-assets/Vector-bg.png) ;
+    color: white;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+.holder {
+    display: flex;
+}
+.login-info {
+
+    width: 90%;
+    margin: 0 40px;
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+   
+  
+ 
+}
+.login-info-content {
+    // margin: 80px;
+    // overflow: hidden;
+    
+ 
+    
+    
+}
+.login-info-content .login-title {
+    color: $text-main-color;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.login-info-content .logo-des {
+    color: $text-white-color;
+    margin-top: 20px;
+}
+.users-container {
+    margin-top: 30px;
+   
+  
+}
+.user-contnt {
+    background-color: $city-primary-bg-color;
+   
+    border: 10px solid #D9D9D9;
+    //  border-top: 13px solid #D9D9D9;
+    // border-bottom: 13px solid #D9D9D9;
+    position: relative;
+    margin-left:24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.user-contnt img {
+    padding: 30px;
+}
+
+.user-contnt::before {
+    content: "";
+    position: absolute;
+    background-color: #1C274C;
+    border-left: 10px solid #D9D9D9;
+    border-right: 10px solid #D9D9D9;
+    border-bottom: 10px solid #D9D9D9;
+    width: 57px;
+    height: 33px;
+    top: -9.5px;
+    left: 15px;
+    transition: 0.3s;
+
+
+} 
+.user-contnt::after {
+    content: "";
+    position: absolute;
+    background-color: #1C274C;
+    border-left: 10px solid #D9D9D9;
+    border-right: 10px solid #D9D9D9;
+    border-top: 10px solid #D9D9D9;
+    width: 57px;
+    height: 32px;
+    bottom: -10px;
+    left: 15px;
+    transition: 0.3s;
+
+}
+
+.user-contnt:hover.user-contnt::after{
+    border-left: 10px solid $text-main-color;
+    border-right: 10px solid $text-main-color;
+    border-top: 10px solid $text-main-color;
+}
+.user-contnt:hover.user-contnt::before{
+    border-left: 10px solid $text-main-color;
+    border-right: 10px solid $text-main-color;
+    border-bottom: 10px solid $text-main-color;
+}
+.user-contnt:hover.user-contnt {
+    border-top: 10px solid $text-main-color;
+    border-bottom: 10px solid $text-main-color;
+    border: 10px solid $text-main-color;
+    background-color: white;
+}
+
+.user-box .user-title {
+    color: white;   
+    margin-top: 5px;
+    margin-right: 30px;
+    cursor: pointer;
+    
+}
+// .user-title:hover {
+//     -webkit-text-stroke:1px  $text-main-color;
+
+// }
+.user-box:hover.user-box .user-title {
+    -webkit-text-stroke:1px  $text-main-color; 
+}
+
+form {
+    margin-top: 40px;
+}
+form .input-label {
+    font-size: 18px;
+    font-weight: 100px;
+} 
+form .email {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to left,#848386, #E8E7EC );
+    padding: 30px 20px;
+}
+form .email::placeholder {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+form .email:focus {
+    outline: none;
+}
+.input-container {
+    position: relative;
+}
+.input-container::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 79px solid $city-primary-bg-color;
+    left: 0px;
+    top: 74px;
+}
+.input-container::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-right: 79px solid $city-primary-bg-color;
+    right: 0px;
+    bottom: 40px;
+    z-index: 2;
+}
+form .login-button {
+    width: 80%;
+    display: block;
+    padding: 15px ;
+    color: #1C274C;
+    background: linear-gradient(to right,#2CBFDB, #82D7F7 );
+    font-size: 30px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+    border: none;
+
+
+}
+.login-button-container {
+    position: relative;
+}
+.login-button-container .left-image   {
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+}
+.login-button-container .Right-image  {
+    position: absolute;
+    right: 27px;
+    top: 0px;
+}.login-google-container {
+    text-align: center  ;
+    margin-top: 64px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+.login-google-container::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 200px;
+    height: 3px;
+    left: 28px;
+    top: 15px;
+
+}
+.login-google-container::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 200px;
+    height: 3px;
+    right: 28px;
+    top: 15px;
+
+}
+.google-icons {
+    text-align: center;
+}
+
+// ------------------------------------------------------
+.left-panel-image {
+    position: relative;
+    z-index: 88;
+    background-image: url(../../../../../assets/images/auth-assets/login-bg.png);
+    background-repeat: no-repeat;
+   background-position: fixed;
+   background-size: cover;
+   height: 90vh;
+  
+
+}
